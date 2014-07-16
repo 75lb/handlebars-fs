@@ -4,20 +4,19 @@
 
 handlebars-fs
 ===============
-Handlebars helper mappings for the node.js [fs module](http://nodejs.org/api/fs.html). Works server and client-side (using browserify).
+Handlebars helper mappings for the node.js [fs module](http://nodejs.org/api/fs.html).
 
 ##Install
 ```sh
-$ npm install handlebars-fs
+$ npm install handlebars-fs --save
 ```
 
 ##Usage
 ```js
 var handlebars = require("handlebars");
-var handlebarsFs = require("handlebars-fs");
 
 /* this will register the handlebars-fs helpers on your handlebars instance */
-handlebarsFs(handlebars);
+require("handlebars-fs")(handlebars);
 ```
 
 ###Example
@@ -25,4 +24,10 @@ handlebarsFs(handlebars);
 {{#if (fs-exists 'readme.md')}}
 Readme exists
 {{/if}}
+```
+
+```
+{
+    "content": {{{json-stringify (fs-readFile "article.md")}}}
+}
 ```
