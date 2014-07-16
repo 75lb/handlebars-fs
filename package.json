@@ -1,6 +1,6 @@
 {
   "name": "handlebars-fs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Handlebars helper mappings for the node.js fs module",
   "repository": "https://github.com/75lb/handlebars-fs",
   "main": "lib/handlebars-fs.js",
