@@ -4,5 +4,8 @@
   "description": "Handlebars helper mappings for the node.js fs module",
   "repository": "https://github.com/75lb/handlebars-fs",
   "main": "lib/handlebars-fs.js",
-  "author": "Lloyd Brookes"
+  "author": "Lloyd Brookes",
+  "dependencies": {
+    "more-fs": "^0.5.0"
+  }
 }
